@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VermillionNight</title>
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/variable.css">
+    <link rel="stylesheet" href="./src/css/responsive.css">
+    <link rel="stylesheet" href="./src/css/menu.css">
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-container">
+            <a href="./index.html">
+                <h1 class="logo">Compendiun Noctis</h1>
+            </a>
+
+            <!-- é importante que o ID do input e o FOR do label tenham o mesmo nome para que fiquem integrados. -->
+            <!-- essa é a estrutura básica HTML para criar um menu hamburger responsivo -->
+            <nav>
+                <input type="checkbox" id="menu-hamburguer">
+                <label for="menu-hamburguer">
+                    <div class="menu">
+                        <span class="hamburguer"></span>
+                    </div>
+                </label>
+
+
+                <ul>
+                    <li><a href="#novidades">Novidades</a></li>
+                    <li><a href="#jogos">Jogos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="#downloads">Downloads</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="carrossel">
+        <a href="#"  id="seta-voltar" class="seta-voltar opacidade"><img src="./src/img/seta.png" alt="seta-voltar" class="imagem-seta"></a>
+        <div class="slide vamp-call mostrar"></div>
+        <div class="slide vamp-city"></div>
+        <div class="slide vamp-classic"></div>
+        <div class="slide vamp-fight"></div>
+        <a href="#" id="seta-avançar" class="seta-avançar"><img src="./src/img/seta.png" alt="seta-avançar" class="imagem-seta"></a>
+    </div>
+</body>
+
+</html>

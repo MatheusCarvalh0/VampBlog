@@ -1,0 +1,113 @@
+/*GLOBAL*/
+@font-face {
+    font-family: bloodLux;
+    src: url(./fonts/BeautyLuxury-Regular.otf);
+}
+@font-face {
+    font-family: bloodLust;
+    src: url(./fonts/BloodLust.ttf);
+}
+@font-face {
+    font-family: gregorian;
+    src: url(./fonts/GregorianFLF.ttf);
+}
+
+html{
+    font-size: 62.5%;
+}
+
+/*HEADER*/
+
+.header{
+    grid-area: header;
+    background-color: black;
+}
+
+.header .header-container{
+    display: flex;
+    padding: 20px 40px;
+    justify-content: space-between;
+    align-items: center;
+    /* essa altura minima é para que o header não fique muito pequeno na versão mobile */
+    min-height: 75px;
+}
+
+.header h1{
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: gregorian;
+    letter-spacing: 2px;
+    transition: 0.5s ease-in-out;
+}
+
+.header a:hover h1{
+    color: var(--blood-color);
+}
+
+/*CARROSSEL*/
+
+.carrossel{
+    background-color: black;
+    display: flex;
+    position: relative;
+    align-items: center;
+    height: 550px;
+}
+
+.carrossel .slide{
+    opacity: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    transition: 0.5s ease-out;
+}
+
+.carrossel .slide.mostrar{
+    opacity: 1;
+}
+
+.vamp-call{
+    background-image: url(../img/carrossel/vamp-call.jpg);
+    background-position-y: top;
+}
+
+.vamp-city{
+    background-image: url(../img/carrossel/vamp-city.jpg);
+    background-position-y: bottom;
+    background-position-x:center;
+}
+
+.vamp-classic{
+    background-image: url(../img/carrossel/vamp-classic.jpg);
+    background-position-y: center;
+}
+
+.vamp-fight{
+    background-image: url(../img/carrossel/vamp-fight.jpg);
+}
+
+.seta-avançar, .seta-voltar{
+    position: absolute;
+    z-index: 1;
+}
+
+.seta-voltar{
+    left: 4%;
+    transform: rotateY(180deg);
+}
+
+.seta-avançar{
+    right: 4%;
+}
+
+.imagem-seta{
+    width: 3rem;
+    height: 3rem;
+}
+
+.opacidade{
+    opacity: 0.6;
+    cursor: default;
+}
